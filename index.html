@@ -5,46 +5,8 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div id="iframeContainer"></div>
-
-  <script>
-    // URLs to fetch
-    var urls = [
-      "https://widget.inisign.com/Widget/Customers/Customer.aspx?token=6e5cc038-e918-4f97-9a59-d2afa0456abf&scaleToFit=true",
-      "https://widget.inisign.com/Widget/Customers/Customer.aspx?token=a8923cdb-9d92-46bc-b6a4-d026c2cf9a89&scaleToFit=true",
-      "https://widget.inisign.com/Widget/Customers/Customer.aspx?token=756a5aa2-a95f-4d15-ad5a-59829741075b&scaleToFit=true"
-    ];
-
-    // Function to fetch and extract body content
-    function fetchAndExtractContent(url, containerId) {
-      fetch(url)
-        .then(response => response.text())
-        .then(data => {
-          var tempElement = document.createElement("html");
-          tempElement.innerHTML = data;
-          var bodyContent = tempElement.querySelector("body").innerHTML;
-          document.getElementById(containerId).innerHTML = bodyContent;
-        })
-        .catch(error => console.log(error));
-    }
-
-    // Fetch and extract content for each URL
-    urls.forEach(function(url, index) {
-      var containerId = "iframeContainer_" + index;
-      var containerElement = document.createElement("div");
-      containerElement.id = containerId;
-      containerElement.className = "iframeContent";
-      document.getElementById("iframeContainer").appendChild(containerElement);
-      fetchAndExtractContent(url, containerId);
-    });
-  </script>
-
-  <style>
-    .iframeContent {
-      width: 33%;
-      float: left;
-    }
-  </style>
-
+  <iframe src="https://widget.inisign.com/Widget/Customers/Customer.aspx?token=6e5cc038-e918-4f97-9a59-d2afa0456abf&scaleToFit=true" width="1080" height="1920"></iframe>
+  <iframe src="https://widget.inisign.com/Widget/Customers/Customer.aspx?token=a8923cdb-9d92-46bc-b6a4-d026c2cf9a89&scaleToFit=true" width="1080" height="1920"></iframe>
+  <iframe src="https://widget.inisign.com/Widget/Customers/Customer.aspx?token=756a5aa2-a95f-4d15-ad5a-59829741075b&scaleToFit=true" width="1080" height="1920"></iframe>
 </body>
 </html>

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lunsj/static/css/main.f855e6bc.css",
+    "main.js": "/lunsj/static/js/main.d632a207.js",
+    "static/js/453.5d0daf6e.chunk.js": "/lunsj/static/js/453.5d0daf6e.chunk.js",
+    "index.html": "/lunsj/index.html",
+    "main.f855e6bc.css.map": "/lunsj/static/css/main.f855e6bc.css.map",
+    "main.d632a207.js.map": "/lunsj/static/js/main.d632a207.js.map",
+    "453.5d0daf6e.chunk.js.map": "/lunsj/static/js/453.5d0daf6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.d632a207.js"
+  ]
+}

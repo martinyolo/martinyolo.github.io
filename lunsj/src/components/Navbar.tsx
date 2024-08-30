@@ -44,11 +44,6 @@ const Navbar = () => {
         <div>
             <div>
                 <div>
-                    {currentUser ? (
-                        <h1>Stem i vei!</h1>
-                    ) : (
-                        <h1>Logg inn for å stemme</h1>
-                    )}
                     <div>
                         <div>
                             <div style={{ position: 'fixed', top: '15px', right: '15px'}}>

@@ -19,7 +19,6 @@ export const loginWithGoogle = async () => {
       displayName: result.user.displayName,
       photoURL: result.user.photoURL,
       email: result.user.email,
-      phoneNumber: result.user.phoneNumber,
     };
     await addGoogleUser(userData);
   }
@@ -48,7 +47,6 @@ export async function getUserFromUid(uid: string) {
     displayName: doc.data().displayName,
     photoURL: doc.data().photoURL,
     email: doc.data().email,
-    phoneNumber: doc.data().phoneNumber,
   };
 
   return user;

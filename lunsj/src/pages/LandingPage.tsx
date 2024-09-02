@@ -16,7 +16,7 @@ const fresh4youCurrentDayMenu = "https://widget.inisign.com/Widget/Customers/Cus
 const flowCurrentDayMeny = "https://widget.inisign.com/Widget/Customers/Customer.aspx?token=4a0457f8-dbfa-4783-8ebe-b5ee0486843f&scaleToFit=true"
 
 const LandingPage = () => {
-  const [showWeekMenu, setShowWeekMenu] = React.useState<boolean>(true);
+  const [showWeekMenu, setShowWeekMenu] = React.useState<boolean>(false);
 
   return (
     <div style={{ height: "100vh", width: "100vw" }}>

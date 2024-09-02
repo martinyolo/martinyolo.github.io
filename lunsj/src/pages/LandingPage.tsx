@@ -1,5 +1,4 @@
 import React from "react";
-import RadioButtons from "../components/RadioButtons";
 import ToggleButtonGroups from "../components/ToggleButtonGroup";
 import FormBoxes from "../components/FormBoxes";
 import VotingResult from "../components/VotingResult";
@@ -22,20 +21,17 @@ const LandingPage = () => {
     <div style={{ height: "100vh", width: "100vw" }}>
       <ToggleButtonGroups selectedValue={showWeekMenu} handleSelectionChange={setShowWeekMenu} />
       <div style={{ display: "grid", gridTemplateColumns: "3fr 1fr", height: "100%" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", height: "100%" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", height: "90%" }}>
           <div style={{ margin: "5px", height: "100%", position: 'relative' }}>
-          {showWeekMenu ? <></> : <h2>Eat the street</h2>}
+            {showWeekMenu ? <></> : <h2>Eat the street</h2>}
             <iframe src={showWeekMenu ? eatTheStreetWeekMenu : eatTheStreetCurrentDayMenu} width="100%" height="100%" title="Page 1"></iframe>
           </div>
           <div style={{ margin: "5px", height: "100%", position: 'relative' }}>
-          {showWeekMenu ? <></> : <h2>Fresh</h2>}
+            {showWeekMenu ? <></> : <h2>Fresh</h2>}
             <iframe src={showWeekMenu ? fresh4youWeekMenu : fresh4youCurrentDayMenu} width="100%" height="100%" title="Page 2"></iframe>
-            {/*             <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 999 }}>
-              <RadioButtons />
-            </div> */}
           </div>
           <div style={{ margin: "5px", height: "100%", position: 'relative' }}>
-          {showWeekMenu ? <></> : <h2>Flow</h2>}
+            {showWeekMenu ? <></> : <h2>Flow</h2>}
             <iframe src={showWeekMenu ? flowWeekMenu : flowCurrentDayMeny} width="100%" height="100%" title="Page 3"></iframe>
           </div>
         </div>

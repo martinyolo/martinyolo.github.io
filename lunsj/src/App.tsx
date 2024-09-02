@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import { HashRouter, Route, Routes, } from "react-router-dom"
 import Navbar from './components/Navbar';
 import { AuthProvider } from './context/AuthContext';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
+            <Footer />
           </AuthProvider>
       </HashRouter>
   </div>

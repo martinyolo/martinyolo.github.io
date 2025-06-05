@@ -4,9 +4,15 @@ const Footer: React.FC = () => {
     return (
         <footer style={footerStyle}>
             <p>
-            Menyen er hentet fra:  
+                Menyen er hentet fra:
                 <a href="https://widget.inisign.com/Widget/Customers/Customer.aspx?token=c5a641de-e74e-48eb-be4e-d847f261ec11" target="_blank" rel="noopener noreferrer">
-                     https://widget.inisign.com/Widget/Customers/Customer.aspx?token=c5a641de-e74e-48eb-be4e-d847f261ec11
+                    https://widget.inisign.com/Widget/Customers/Customer.aspx?token=c5a641de-e74e-48eb-be4e-d847f261ec11
+                </a>
+            </p>
+            <p>
+                Link til kode:
+                <a href="https://github.com/martinyolo/martinyolo.github.io/tree/main/lunsj" target="_blank" rel="noopener noreferrer">
+                    https://github.com/martinyolo/martinyolo.github.io/tree/main/lunsj
                 </a>
             </p>
         </footer>
